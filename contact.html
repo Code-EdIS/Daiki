@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f2ea">
+  <meta name="description" content="Contact DAIKI about our digital security solutions.">
+  <title>Contact — DAIKI</title>
+  <link rel="icon" href="assets/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="contact">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="floating-header">
+    <a class="brand" href="index.html" aria-label="DAIKI home"><img class="logoPng" src="assets/PngLogo.png" alt="DAIKI logo"></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+      <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <button class="lang-toggle" id="langSwitch" type="button">EN / CS</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="inner-hero contact-hero">
+      <div class="inner-hero-blob" aria-hidden="true"></div>
+      <div class="inner-hero-content reveal">
+        <span class="micro-label" data-i18n="contact.label">EVERY CONNECTION BEGINS SOMEWHERE</span>
+        <h1 data-i18n-html="contact.title">Let's make<br><span class="serif-word">contact.</span></h1>
+        <p data-i18n="contact.lead">Have a question, an idea or a potential collaboration in mind? We would love to hear from you.</p>
+      </div>
+      <span class="inner-hero-mark">縁</span>
+    </section>
+
+    <section class="contact-world">
+      <div class="contact-world-copy reveal">
+        <span class="micro-label" data-i18n="contact.infoLabel">LET'S CONNECT</span>
+        <h2 data-i18n-html="contact.infoTitle">Good things<br>begin with a<br><span class="serif-word">conversation.</span></h2>
+        <p data-i18n="contact.infoText">Tell us about your requirements. We will prepare your message in your email application so you can review and send it.</p>
+        <div class="contact-direct">
+          <span data-i18n="contact.emailLabel">EMAIL ENQUIRIES</span>
+          <a href="mailto:contact@daiki.com">contact@daiki.com ↗</a>
+        </div>
+        <div class="contact-direct">
+          <span data-i18n="contact.interestsLabel">AREAS OF INTEREST</span>
+          <p data-i18n="contact.interestsText">Image-based password protection, USB hardware encryption and business enquiries.</p>
+        </div>
+        <div class="contact-floating-shape" aria-hidden="true">
+          <span>繋</span>
+        </div>
+      </div>
+
+      <div class="contact-form-island reveal">
+        <div class="form-intro">
+          <span class="micro-label" data-i18n="contact.formLabel">YOUR MESSAGE / 001</span>
+          <h3 data-i18n="contact.formTitle">Tell us your story.</h3>
+        </div>
+        <form id="contactForm">
+          <div class="form-duo">
+            <div class="form-group">
+              <label for="fullName" data-i18n="contact.name">Full name *</label>
+              <input id="fullName" name="name" type="text" required maxlength="120" autocomplete="name" placeholder="Your name" data-i18n-placeholder="contact.namePlaceholder">
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.email">Email address *</label>
+              <input id="email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company" data-i18n="contact.company">Company / Organization</label>
+            <input id="company" name="company" type="text" maxlength="120" autocomplete="organization" placeholder="Optional" data-i18n-placeholder="contact.optional">
+          </div>
+          <div class="form-group">
+            <label for="interest" data-i18n="contact.interest">Area of interest *</label>
+            <select id="interest" name="interest" required>
+              <option value="" data-i18n="contact.select">Select an option</option>
+              <option value="image" data-i18n="contact.imageOption">Image-based password protection</option>
+              <option value="usb" data-i18n="contact.usbOption">USB hardware encryption</option>
+              <option value="partnership" data-i18n="contact.partnerOption">Partnership / Business enquiry</option>
+              <option value="general" data-i18n="contact.generalOption">General enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.message">Your message *</label>
+            <textarea id="message" name="message" required maxlength="5000" rows="6" placeholder="Tell us about your enquiry..." data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+          </div>
+          <label class="consent-row">
+            <input id="privacy" type="checkbox" required>
+            <span data-i18n="contact.privacy">I understand that my email application will handle the message and its delivery.</span>
+          </label>
+          <div class="form-actions">
+            <button class="pill-button" type="submit" data-i18n="contact.send">Open email application ↗</button>
+            <button class="pill-button pill-secondary" type="button" id="gmailButton" data-i18n="contact.gmail">Continue with Gmail ↗</button>
+          </div>
+          <p class="form-note" data-i18n="contact.disclaimer">No message is sent automatically. Review and send it from your email application.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-ending">
+      <div class="contact-ending-shape" aria-hidden="true"></div>
+      <div class="contact-ending-copy reveal">
+        <span class="micro-label" data-i18n="common.next">THE NEXT CHAPTER</span>
+        <h2 data-i18n-html="contact.ctaTitle">Curiosity is<br>the beginning of<br><span class="serif-word">progress.</span></h2>
+        <p data-i18n="contact.ctaText">Explore our software and hardware security concepts.</p>
+        <a href="solutions.html" class="pill-button" data-i18n="contact.ctaButton">View our solutions ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <img class="logoPng" src="assets/PngLogo.png" alt="DAIKI logo">
+      <div class="footer-links">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+      <a class="footer-email" href="mailto:contact@daiki.com">contact@daiki.com ↗</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> DAIKI</span>
+      <span data-i18n="footer.tagline">TECHNOLOGY WITH INTENTION</span>
+      <span>静けさの中に、強さがある。</span>
+    </div>
+  </footer>
+</body>
+</html>
