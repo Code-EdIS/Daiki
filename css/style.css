@@ -284,6 +284,7 @@ p{color:var(--muted)}
 .footer-links a:hover,.footer-email:hover{color:#f47a7a}
 .footer-email{font-size:13px;white-space:nowrap}
 .footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#a8aaa2;font-size:10px;letter-spacing:.13em}
+.logoPngFooter{max-width:50%;height:auto}
 
 /* Animation */
 @keyframes morph{

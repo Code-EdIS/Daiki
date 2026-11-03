@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  const CONTACT_EMAIL = "contact@daiki.com";
+  const CONTACT_EMAIL = "info@daikisro.com";
 
   // Floating navigation
   const header = document.querySelector(".floating-header");
